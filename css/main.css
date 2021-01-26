@@ -567,6 +567,51 @@ section.global ul li a p {
   font-size: 17px;
 }
 
+/* footer */
+footer {
+  padding: 80px 0 0;
+  text-align: center;
+}
+
+footer .sns a {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+footer .footer-logo {
+  margin: 40px 0;
+  color: #39312b;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: -6px;
+}
+
+footer .company-info {
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+footer .company-info span {
+  display: block;
+  margin-top: 20px;
+  color: #888;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+footer .box {
+  background: url(../img/bottom_bg.jpg) no-repeat center/cover;
+  padding: 150px 0;
+  margin-top: 80px;
+}
+
+footer .box p {
+  color: #fff;
+  font-size: 22px;
+  font-weight: normal;
+  animation: slide-up 1s;
+}
+
 /* animation */
 @keyframes mask {
   0%, 50% {
