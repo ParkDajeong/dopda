@@ -448,6 +448,125 @@ section.premium .banner li img {
   width: 100%;
 }
 
+/* gloabal */
+section.global {
+  position: relative;
+  width: 95%;
+  margin: 40px auto 0;
+  padding: 40px 0;
+  text-align: center;
+}
+
+section.global::before {
+  content: "";
+  background-color: #eee;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 45%;
+  z-index: -1;
+}
+
+section.global .title h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+section.global .title p {
+  margin-bottom: 50px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+section.global ul {
+  display: flex;
+  padding-top: 50px;
+}
+
+section.global ul li {
+  padding: 15px;
+}
+
+section.global ul li:nth-child(1),
+section.global ul li:nth-child(3) {
+  margin-top: -50px;
+}
+
+section.global ul li:nth-child(1) {
+  animation: slide-up 1s;
+}
+
+section.global ul li:nth-child(2) {
+  animation: slide-up 1.4s;
+}
+
+section.global ul li:nth-child(3) {
+  animation: slide-up 1.7s;
+}
+
+section.global ul li:nth-child(4) {
+  animation: slide-up 2s;
+}
+
+section.global ul li a {
+  display: block;
+}
+
+section.global ul li a .img {
+  position: relative;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+}
+
+section.global ul li a:hover .img,
+section.global ul li a:focus .img{
+  box-shadow: 15px 18px 10px rgba(0, 0, 0, 0.35);
+  transform: translate(-8px, -8px);
+}
+
+section.global ul li a .img::after {
+  content: "VIEW";
+  background-color: rgba(44, 35, 28, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #d4d4d4;
+  font-size: 22px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+section.global ul li a:hover .img::after,
+section.global ul li a:focus .img::after {
+  opacity: 1;
+}
+
+section.global ul li a .img img {
+  width: 100%;
+}
+
+section.global ul li a h3 {
+  margin: 40px 0 15px;
+  font-size: 22px;
+}
+
+section.global ul li a h3 span {
+  display: block;
+  color: #888;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+section.global ul li a p {
+  font-size: 17px;
+}
+
 /* animation */
 @keyframes mask {
   0%, 50% {
