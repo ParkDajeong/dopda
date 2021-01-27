@@ -19,3 +19,16 @@ $(window).on("scroll resize", function() {
   const scroll = $(document).scrollTop();
   fixHeader(scroll);
 });
+
+// slick slide 
+$(function() {
+  $(".visual .slide").slick({
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: false,
+    dots: true,
+    fade: true,
+    pauseOnHover: false,
+    pauseOnFocus: false,
+  });
+});
