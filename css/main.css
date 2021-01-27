@@ -806,7 +806,7 @@ footer .box.animate__motion p {
 
   header .bg {
     background-color: rgba(0, 0, 0, 0.6);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: none;
@@ -829,12 +829,12 @@ footer .box.animate__motion p {
     height: 100vh;
     z-index: 300;
     overflow: hidden;
-    transition: 0.3s;
+    transition: width 0.3s;
   }
 
   header nav.on {
-    width: 60%;
-    min-width: 300px;
+    width: 50%;
+    max-width: 300px;
   }
 
   header nav .close {
