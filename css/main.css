@@ -1226,6 +1226,99 @@ footer .box.animate__motion p {
 }
 
 /* 모바일 : 320px ~ 280px 체크 */
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 320px) {
+  /* visual */
+  section.visual .img .page img {
+    width: 55%;
+    margin-left: 15%;
+  }
+
+  section.visual .title h2 {
+    font-size: 22px;
+  }
+
+  section.visual .title p {
+    font-size: 11px;
+  }
+
+  .slick-dots li button {
+    width: 8px;
+    height: 8px;
+    margin-bottom: 10px;
+  }
+
+  /* about */
+  section.about {
+    height: 480px;
+  }
+
+  section.about .inner h2 {
+    font-size: 16px;
+  }
+
+  section.about .inner ul li {
+    font-size: 11px;
+  }
+
+  section.about .inner ul li h3 {
+    font-size: 14px;
+  }
+
+  /* premium */
+  section.premium {
+    height: 600px;
+  }
+
+  section.premium .textImg {
+    top: 33%;
+  }
+
+  section.premium .title h2 {
+    font-size: 16px;
+  }
+
+  section.premium .title p {
+    font-size: 11px;
+  }
   
+  section.premium .banner {
+    top: 38%;
+    height: 350px;
+  }
+
+  section.premium .banner li:nth-child(1),
+  section.premium .banner li:nth-child(2),
+  section.premium .banner li:nth-child(3) {
+    width: 28%;
+  }
+
+  /* global */
+  section.global .title h2 {
+    font-size: 16px;
+  }
+
+  section.global .title p {
+    font-size: 11px;
+  }
+
+  section.global ul li a h3 {
+    font-size: 14px;
+  }
+
+  /* footer */
+  footer .footer-logo {
+    margin: 20px 0;
+  }
+
+  footer .company-info {
+    font-size: 10px;
+  }
+
+  footer .box {
+    padding: 50px 0;
+  }
+
+  footer .box p {
+    font-size: 14px;
+  }
 }
