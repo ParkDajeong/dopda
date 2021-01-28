@@ -7,9 +7,9 @@
   <!-- font -->
   <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
   <!-- css -->
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/slick.css">
   <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/main.css">
   <!-- script -->
   <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script src="./js/jquery.scrolla.min.js"></script>
@@ -19,18 +19,24 @@
 <body>
   <div class="wrap">
     <!-- header -->
-    <header>
-      <a href="#" class="open"><span class="lnr lnr-menu"></span></a>
-      <span class="bg"></span>
-      <a href="#" class="logo">Concierge.</a>
-      <nav>
-        <a href="#" class="close"><span class="lnr lnr-cross"></span></a>
-        <ul class="gnb">
-          <li><a href="#">about</a></li>
-          <li><a href="#">service</a></li>
-          <li><a href="#">membership</a></li>
-          <li><a href="#">consulting</a></li>
-          <li><a href="#">contact</a></li>
+    <header class="main-header">
+      <a href="#" class="btn-menu--open">
+        <span class="lnr lnr-menu"></span>
+      </a>
+      <span class="main-header__mo-nav-bg"></span>
+      <!-- Footer .logo와의 공통 스타일링 따로 뺴기!!!!!!!!!!!!!!!!!!!! -->
+      <h1 class="logo"><a href="#" class="logo__link">Concierge.</a></h1>
+      <!-- global nav -->
+      <nav class="gnb">
+        <a href="#" class="btn-menu--close">
+          <span class="lnr lnr-cross"></span>
+        </a>
+        <ul class="gnb__list">
+          <li class="gnb__item"><a href="#" class="gnb__link">about</a></li>
+          <li class="gnb__item"><a href="#" class="gnb__link">service</a></li>
+          <li class="gnb__item"><a href="#" class="gnb__link">membership</a></li>
+          <li class="gnb__item"><a href="#" class="gnb__link">consulting</a></li>
+          <li class="gnb__item"><a href="#" class="gnb__link">contact</a></li>
         </ul>
       </nav>
     </header>
@@ -265,7 +271,8 @@
         <a href="#"><img src="./img/youtube.png" alt=""></a>
         <a href="#"><img src="./img/blog.png" alt=""></a>
       </div>
-      <h2 class="footer-logo">Concierge</h2>
+      <!-- <h2 class="footer-logo">Concierge</h2> -->
+      <h1 class="logo"><a href="#" class="logo__link">Concierge.</a></h1>
       <p class="company-info">
         대표자 홍길동 | 서울 중구 세종대로 110<br>
         사업자등록번호:123-12-12345 | 이메일:abc@naver.com<br>

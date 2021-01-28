@@ -1,3 +1,17 @@
+// 모바일 nav 
+$(function() {
+  $(".btn-menu--open").on("click", function() {
+    $("body").css({"overflow": "hidden"});
+    $(".main-header__mo-nav-bg").css({"display": "block"});
+    $(".gnb").addClass("on");
+  });
+  $(".btn-menu--close, .main-header__mo-nav-bg").on("click", function() {
+    $("body").css({"overflow": "auto"});
+    $(".main-header__mo-nav-bg").css({"display": "none"});
+    $(".gnb").removeClass("on");
+  });
+});
+
 // Scrolla
 $(function() {
   $(".animate").scrolla({
@@ -9,9 +23,9 @@ $(function() {
 // Header Event
 function fixHeader(scroll) {
   if(scroll > 200) {
-    $("header").addClass("on");
+    $(".main-header").addClass("on");
   }else {
-    $("header").removeClass("on");
+    $(".main-header").removeClass("on");
   }
 }
 
@@ -30,19 +44,5 @@ $(function() {
     fade: true,
     pauseOnHover: false,
     pauseOnFocus: false,
-  });
-});
-
-// 모바일 nav 
-$(function() {
-  $("header .open").on("click", function() {
-    $("body").css({"overflow": "hidden"});
-    $("header .bg").css({"display": "block"});
-    $("header nav").addClass("on");
-  });
-  $("header .close, header .bg").on("click", function() {
-    $("body").css({"overflow": "auto"});
-    $("header .bg").css({"display": "none"});
-    $("header nav").removeClass("on");
   });
 });
