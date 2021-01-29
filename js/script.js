@@ -1,25 +1,3 @@
-// 모바일 nav 
-$(function() {
-  $(".btn-menu--open").on("click", function() {
-    $("body").css({"overflow": "hidden"});
-    $(".main-header__mo-nav-bg").css({"display": "block"});
-    $(".gnb").addClass("on");
-  });
-  $(".btn-menu--close, .main-header__mo-nav-bg").on("click", function() {
-    $("body").css({"overflow": "auto"});
-    $(".main-header__mo-nav-bg").css({"display": "none"});
-    $(".gnb").removeClass("on");
-  });
-});
-
-// Scrolla
-$(function() {
-  $(".animate").scrolla({
-    mobile: true,
-    once: false,
-  });
-});
-
 // Header Event
 function fixHeader(scroll) {
   if(scroll > 200) {
@@ -34,6 +12,20 @@ $(window).on("scroll resize", function() {
   fixHeader(scroll);
 });
 
+// mobile nav 
+$(function() {
+  $(".btn-menu--open").on("click", function() {
+    $("body").css({"overflow": "hidden"});
+    $(".main-header__mo-nav-bg").css({"display": "block"});
+    $(".gnb").addClass("on");
+  });
+  $(".btn-menu--close, .main-header__mo-nav-bg").on("click", function() {
+    $("body").css({"overflow": "auto"});
+    $(".main-header__mo-nav-bg").css({"display": "none"});
+    $(".gnb").removeClass("on");
+  });
+});
+
 // slick slide 
 $(function() {
   $(".visual .slide").slick({
@@ -44,5 +36,13 @@ $(function() {
     fade: true,
     pauseOnHover: false,
     pauseOnFocus: false,
+  });
+});
+
+// Scrolla
+$(function() {
+  $(".animate").scrolla({
+    mobile: true,
+    once: false,
   });
 });

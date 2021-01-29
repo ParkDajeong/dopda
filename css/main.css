@@ -133,13 +133,13 @@ body {
 }
 
 /* visual */
-section.visual {
+.visual {
   position: relative;
   margin-top: 120px;
   padding-bottom: 50px;
 }
 
-section.visual::before {
+.visual::before {
   content: "";
   background-color: #f0f0f0;
   position: absolute;
@@ -149,30 +149,30 @@ section.visual::before {
   height: 400px;
 }
 
-/* visual - img */
-section.visual .img {
+/* slide */
+.slide__photo {
   position: relative;
   width: 94%;
   text-align: center;
 }
 
-section.visual .img-box {
+.slide__img-box {
   display: block;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
-section.visual .img-box img {
+.slide__img-box img {
   width: 100%;
   transform: scale(1);
 }
 
-section.visual .slick-active .img-box img {
+.slick-active .slide__img-box img {
   animation: scale-ani 4.8s;
 }
 
-section.visual .slick-active .img .mask {
+.slick-active .mask {
   position: absolute;
   top: 0;
   width: 1px;
@@ -180,60 +180,59 @@ section.visual .slick-active .img .mask {
   animation: mask;
 }
 
-section.visual .slick-active .img .mask.a {
+.slick-active .mask.a {
   left: 0;
   animation-duration: 0.4s;
 }
 
-section.visual .slick-active .img .mask.b {
+.slick-active .mask.b {
   left: 25%;
   animation-duration: 0.6s;
 }
 
-section.visual .slick-active .img .mask.c {
+.slick-active .mask.c {
   left: 50%;
   animation-duration: 0.8s;
 }
 
-section.visual .slick-active .img .mask.d {
+.slick-active .mask.d {
   left: 75%;
   animation-duration: 1s;
 }
 
-section.visual .img .page {
+.slide__page {
   position: absolute;
   top: 50%;
   right: -43px;
   transform: translateY(-50%);
 }
 
-/* visual - title */
-section.visual .title {
+.slide__text {
   position: absolute;
   top: 40%;
   left: 8%;
   color: #fff;
 }
 
-section.visual .title h2 {
+.slide__title {
   margin-bottom: 30px;
   font-size: 50px;
 }
 
-section.visual .slick-active .title h2 {
+.slick-active .slide__title {
   animation: slide-up 1.5s;
 }
 
-section.visual .title p {
+.slide__desc {
   font-size: 20px;
   font-weight: 300;
 }
 
-section.visual .slick-active .title p {
+.slick-active .slide__desc {
   animation: slide-up 2.2s;
 }
 
-/* slide slick dots */
+/* slide slick-dots */
 .slick-dots {
   position: absolute;
   right: 4.5%;
@@ -255,7 +254,7 @@ section.visual .slick-active .title p {
 }
 
 /* visual - menu */
-section.visual .menu {
+.visual__menu {
   position: absolute;
   left: 8%;
   bottom: 15%;
@@ -263,36 +262,33 @@ section.visual .menu {
   animation: slide-up 2.8s;
 }
 
-section.visual .menu li {
-  margin-right: 60px;
-}
-
-section.visual .menu li a {
+.visual__menu-link {
   display: flex;
+  margin-right: 60px;
   align-items: center;
   color: #fff;
 }
 
-section.visual .menu li a p {
+.visual__link-text {
   font-size: 20px;
   font-weight: bold;
   line-height: 1.6;
 }
 
-section.visual .menu li a p span {
+.visual__link-text span {
   display: block;
   color: #aaa;
   font-size: 15px;
   font-weight: 100;
 }
 
-section.visual .menu li a .arrow {
+.visual__arrow {
   position: relative;
   margin-left: 20px;
   z-index: 1;
 }
 
-section.visual .menu li a .arrow::before {
+.visual__arrow::before {
   content: "";
   background-color: rgba(255, 255, 255, 0.4);
   position: absolute;
@@ -304,8 +300,8 @@ section.visual .menu li a .arrow::before {
   transition: 0.3s;
 }
 
-section.visual .menu li a:hover .arrow::before, 
-section.visual .menu li a:focus .arrow::before {
+.visual__menu-link:hover .visual__arrow::before, 
+.visual__menu-link:focus .visual__arrow::before {
   top: 0;
   right: 0;
 }
@@ -875,34 +871,35 @@ footer .box.animate__motion p {
   }
 
   /* visual */
-  section.visual {
+  .visual {
     margin-top: 60px;
   }
 
-  section.visual .img-box img {
+  /* slide */
+  .slide__img-box img {
     width: auto;
     height: 100%;
   }
 
-  section.visual .title {
+  .slide__title {
     left: 5%;
-  }
-
-  section.visual .menu {
-    /* width: 100%; */
-    left: 5%;
-  }
-
-  section.visual .menu li {
-    margin-right: 30PX;
-  }
-
-  section.visual .menu li a p {
-    font-size: 17px;
   }
 
   .slick-dots {
     right: 2.5%;
+  }
+
+  /* visual - menu */
+  .visual__menu {
+    left: 5%;
+  }
+
+  .visual__menu-link {
+    margin-right: 30PX;
+  }
+
+  .visual__link-text {
+    font-size: 17px;
   }
 
   /* about */
@@ -969,12 +966,12 @@ footer .box.animate__motion p {
 /* 태블릿 : 950px ~ 751px */
 @media screen and (max-width: 950px) {
   /* visual */
-  section.visual .menu {
-    display: none;
-  }
-
-  section.visual .img {
+  .slide__photo {
     width: 92%;
+  }
+  
+  .visual__menu {
+    display: none;
   }
 
   /* about */
@@ -1124,31 +1121,32 @@ footer .box.animate__motion p {
   }
 
   /* visual */
-  section.visual {
+  .visual {
     height: 80vh;
     overflow: hidden;
   }
 
-  section.visual .img {
+  /* slide */
+  .slide__photo {
     width: 87%;
   }
 
-  section.visual .img-box img {
+  .slide__img-box img {
     width: auto;
     height: 80vh;
   }
 
-  section.visual .img .page img {
+  .slide__page img {
     width: 75%;
     height: auto;
     margin-left: 8%;
   }
 
-  section.visual .title h2 {
+  .slide__title {
     font-size: 29px;
   }
 
-  section.visual .title p {
+  .slide__desc {
     font-size: 14px;
   }
 
@@ -1237,19 +1235,20 @@ footer .box.animate__motion p {
 /* 모바일 : 320px ~ 280px 체크 */
 @media screen and (max-width: 320px) {
   /* visual */
-  section.visual .img .page img {
+  .slide__page img {
     width: 55%;
     margin-left: 15%;
   }
 
-  section.visual .title h2 {
+  .slide__title {
     font-size: 22px;
   }
 
-  section.visual .title p {
+  .slide__desc {
     font-size: 11px;
   }
 
+  /* slide */
   .slick-dots li button {
     width: 8px;
     height: 8px;
