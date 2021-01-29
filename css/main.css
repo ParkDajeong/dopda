@@ -550,7 +550,7 @@ body {
 }
 
 /* gloabal */
-section.global {
+.global {
   position: relative;
   width: 95%;
   margin: 40px auto 0;
@@ -558,7 +558,7 @@ section.global {
   text-align: center;
 }
 
-section.global::before {
+.global::before {
   content: "";
   background-color: #eee;
   position: absolute;
@@ -569,64 +569,61 @@ section.global::before {
   z-index: -1;
 }
 
-section.global .title h2 {
+.section-title {
   margin-bottom: 20px;
   font-size: 30px;
 }
 
-section.global .title p {
+.global__desc {
   margin-bottom: 50px;
   font-size: 18px;
   line-height: 1.4;
 }
 
-section.global ul {
+.global__service-list {
   display: flex;
   padding-top: 50px;
 }
 
-section.global ul li {
+.global__service-link {
+  width: 25%;
   padding: 15px;
 }
 
-section.global ul li:nth-child(1),
-section.global ul li:nth-child(3) {
+.global__service-link:nth-child(1),
+.global__service-link:nth-child(3) {
   margin-top: -50px;
 }
 
-section.global.animate__motion ul li:nth-child(1) {
+.global.animate__motion .global__service-link:nth-child(1) {
   animation: slide-up 1s;
 }
 
-section.global.animate__motion ul li:nth-child(2) {
+.global.animate__motion .global__service-link:nth-child(2) {
   animation: slide-up 1.4s;
 }
 
-section.global.animate__motion ul li:nth-child(3) {
+.global.animate__motion .global__service-link:nth-child(3) {
   animation: slide-up 1.7s;
 }
 
-section.global.animate__motion ul li:nth-child(4) {
+.global.animate__motion .global__service-link:nth-child(4) {
   animation: slide-up 2s;
 }
 
-section.global ul li a {
-  display: block;
-}
-
-section.global ul li a .img {
+.global__img-box {
   position: relative;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
   transition: 0.3s;
 }
 
-section.global ul li a:hover .img,
-section.global ul li a:focus .img{
+.global__service-link:hover .global__img-box,
+.global__service-link:focus .global__img-box{
   box-shadow: 15px 18px 10px rgba(0, 0, 0, 0.35);
   transform: translate(-8px, -8px);
 }
 
-section.global ul li a .img::after {
+.global__img-box::after {
   content: "VIEW";
   background-color: rgba(44, 35, 28, 0.8);
   position: absolute;
@@ -643,28 +640,30 @@ section.global ul li a .img::after {
   transition: 0.3s;
 }
 
-section.global ul li a:hover .img::after,
-section.global ul li a:focus .img::after {
+.global__service-link:hover .global__img-box::after,
+.global__service-link:focus .global__img-box::after {
   opacity: 1;
 }
 
-section.global ul li a .img img {
+.global__img-box img {
   width: 100%;
 }
 
-section.global ul li a h3 {
+.global__service-name {
   margin: 40px 0 15px;
   font-size: 22px;
 }
 
-section.global ul li a h3 span {
+.gloabl__service-name-en {
   display: block;
   color: #888;
   font-size: 18px;
   font-weight: normal;
 }
 
-section.global ul li a p {
+.global__service-desc {
+  padding: 0 8px;
+  word-break: keep-all;
   font-size: 17px;
 }
 
@@ -945,20 +944,20 @@ footer .box.animate__motion p {
   }
 
   /* global */
-  section.global {
+  .global {
     width: 100%;
   }
 
-  section.global ul li {
+  .global__service-link {
     padding: 10px;
   }
 
-  section.global ul li a p {
-    font-size: 15px;
+  .global__img-box::after {
+    display: none;
   }
 
-  section.global ul li a .img::after {
-    display: none;
+  .global__service-desc {
+    font-size: 15px;
   }
 }
 
@@ -1044,39 +1043,39 @@ footer .box.animate__motion p {
   }
 
   /* global */
-  section.global::before {
+  .global::before {
     height: 48%;
   }
 
-  section.global .title h2 {
+  .section-title {
     font-size: 20px;
   }
 
-  section.global .title p {
+  .global__desc {
     font-size: 13px;
   }
 
-  section.global ul {
+  .global__service-list {
     flex-wrap: wrap;
     width: 95%;
     margin: auto;
   }
 
-  section.global ul li {
+  .global__service-link {
     width: 50%;
     margin-bottom: 20px;
   }
 
-  section.global ul li a h3 {
+  .global__service-name {
     margin: 20px 0 10px;
     font-size: 16px;
   }
 
-  section.global ul li a h3 span {
+  .gloabl__service-name-en {
     font-size: 12px;
   }
 
-  section.global ul li a p {
+  .global__service-desc {
     font-size: 10px;
   }
 
@@ -1301,15 +1300,15 @@ footer .box.animate__motion p {
   }
 
   /* global */
-  section.global .title h2 {
+  .section-title {
     font-size: 16px;
   }
 
-  section.global .title p {
+  .global__desc {
     font-size: 11px;
   }
 
-  section.global ul li a h3 {
+  .global__service-name {
     font-size: 14px;
   }
 
