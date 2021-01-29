@@ -441,7 +441,7 @@ body {
 }
 
 /* premium */
-section.premium {
+.premium {
   background: url(../img/con2_bg.jpg) no-repeat center/cover;
   position: relative;
   width: 95%;
@@ -450,7 +450,7 @@ section.premium {
   margin: 40px auto;
 }
 
-section.premium .textImg {
+.premium__text-img {
   position: absolute;
   left: 0;
   top: 20%;
@@ -458,34 +458,34 @@ section.premium .textImg {
   overflow: hidden;
 }
 
-section.premium .textImg.animate__motion {
+.premium__text-img.animate__motion {
   animation: width-ani 2.5s;
 }
 
-section.premium .title {
+.premium__text {
   position: absolute;
   left: 8%;
   top: 35%;
 }
 
-section.premium .title h2 {
+.section-title {
   margin-bottom: 20px;
   font-size: 30px;
 }
 
-section.premium .title p {
+.premium__desc {
   margin-bottom: 30px;
   font-size: 19px;
   line-height: 1.6;
 }
 
-section.premium .title a {
+.premium__btn-more {
   position: relative;
   display: inline-block;
   font-size: 24px;
 }
 
-section.premium .title a::before {
+.premium__btn-more::before {
   content: "";
   background-color: rgba(0, 0, 0, 0.08);
   position: absolute;
@@ -496,56 +496,56 @@ section.premium .title a::before {
   transition: 0.3s;
 }
 
-section.premium .title a:hover::before,
-section.premium .title a:focus::before {
+.premium__btn-more:hover::before,
+.premium__btn-more:focus::before {
   width: 0;
 }
 
-section.premium .banner li {
+.premium__gallery-item {
   position: absolute;
   width: 15%;
   box-shadow: 5px 6px 15px rgba(3, 3, 3, 0.4);
 }
 
-section.premium .banner li:nth-child(1) {
+.premium__gallery-item:nth-child(1) {
   top: 15%;
   left: 45%;
 }
 
-section.premium .banner li.animate__motion:nth-child(1) {
+.premium__gallery-item.animate__motion:nth-child(1) {
   animation: slide-up 1.2s;
 }
 
-section.premium .banner li:nth-child(2) {
+.premium__gallery-item:nth-child(2) {
   top: 50%;
   left: 37%;
 }
 
-section.premium .banner li.animate__motion:nth-child(2) {
+.premium__gallery-item.animate__motion:nth-child(2) {
   animation: slide-up 1.8s;
 }
 
-section.premium .banner li:nth-child(3) {
+.premium__gallery-item:nth-child(3) {
   top: 62%;
   left: 55%;
 }
 
-section.premium .banner li.animate__motion:nth-child(3) {
+.premium__gallery-item.animate__motion:nth-child(3) {
   animation: slide-up 2.2s;
 }
 
-section.premium .banner li:nth-child(4) {
+.premium__gallery-item:nth-child(4) {
   /* top: 0; */
   right: 2%;
   width: 32%;
   max-width: 580px;
 }
 
-section.premium .banner li.animate__motion:nth-child(4) {
+.premium__gallery-item.animate__motion:nth-child(4) {
   animation: slide-up 1.5s;
 }
 
-section.premium .banner li img {
+.premium__gallery-item img {
   width: 100%;
 }
 
@@ -725,7 +725,7 @@ footer .box.animate__motion p {
   animation: slide-up 1s;
 }
 
-/* animation */
+/* 애니메이션 */
 @keyframes mask {
   0%, 50% {
     width: 25%;
@@ -931,17 +931,17 @@ footer .box.animate__motion p {
   }
 
   /* premium */
-  section.premium {
+  .premium {
     width: 100%;
     height: 800px;
   }
 
-  section.premium .title {
-    left: 5%;
+  .premium__text-img {
+    left: 5px;
   }
 
-  section.premium .textImg {
-    left: 5px;
+  .premium__text {
+    left: 5%;
   }
 
   /* global */
@@ -997,24 +997,24 @@ footer .box.animate__motion p {
   }
 
   /* premium */
-  section.premium .title {
+  .premium__text-img {
+    top: 28%;
+    left: 20px;
+    height: 60px;;
+  }
+
+  .premium__text-img img {
+    height: 100%;
+  }
+
+  .premium__text {
     top: 20px;
     left: 0;
     width: 100%;
     text-align: center;
   }
 
-  section.premium .textImg {
-    top: 28%;
-    left: 20px;
-    height: 60px;;
-  }
-
-  section.premium .textImg img {
-    height: 100%;
-  }
-
-  section.premium .banner {
+  .premium__gallery {
     position: relative;
     top: 30%;
     left: 50%;
@@ -1023,22 +1023,22 @@ footer .box.animate__motion p {
     transform: translateX(-50%);
   }
   
-  section.premium .banner li:nth-child(1) {
+  .premium__gallery-item:nth-child(1) {
     left: 13%;
     width: 22%;
   }
 
-  section.premium .banner li:nth-child(2) {
+  .premium__gallery-item:nth-child(2) {
     left: 4%;
     width: 22%;
   }
 
-  section.premium .banner li:nth-child(3) {
+  .premium__gallery-item:nth-child(3) {
     left: 36%;
     width: 22%;
   }
 
-  section.premium .banner li:nth-child(4) {
+  .premium__gallery-item:nth-child(4) {
     left: 50%;
     width: 48%;
   }
@@ -1180,52 +1180,52 @@ footer .box.animate__motion p {
   }
 
   /* premium */
-  section.premium {
+  .premium {
     height: 685px;
   }
 
-  section.premium .textImg {
+  .premium__text-img {
     left: 0;
     height: 32px;
     text-align: center;
   }
 
-  section.premium .title h2 {
+  .section-title {
     font-size: 20px;
   }
 
-  section.premium .title p {
+  .premium__desc {
     margin-bottom: 20px;
     font-size: 13px;
   }
 
-  section.premium .title a {
+  .premium__btn-more {
     font-size: 18px;
   }
 
-  section.premium .title a::before {
+  .premium__btn-more::before {
     width: 60px;
     height: 12px;
   }
 
-  section.premium .banner {
+  .premium__gallery {
     width: 100%;
     height: 400px;
   }
   
-  section.premium .banner li:nth-child(1) {
+  .premium__gallery-item:nth-child(1) {
     left: 10%;
   }
 
-  section.premium .banner li:nth-child(2) {
+  .premium__gallery-item:nth-child(2) {
     left: 5%;
   }
 
-  section.premium .banner li:nth-child(3) {
+  .premium__gallery-item:nth-child(3) {
     left: 38%;
   }
 
-  section.premium .banner li:nth-child(4) {
+  .premium__gallery-item:nth-child(4) {
     top: -3%;
     left: 44%;
     width: 50%;
@@ -1273,30 +1273,30 @@ footer .box.animate__motion p {
   }
 
   /* premium */
-  section.premium {
+  .premium {
     height: 600px;
   }
 
-  section.premium .textImg {
+  .premium__text-img {
     top: 33%;
   }
 
-  section.premium .title h2 {
+  .section-title {
     font-size: 16px;
   }
 
-  section.premium .title p {
+  .premium__desc {
     font-size: 11px;
   }
   
-  section.premium .banner {
+  .premium__gallery {
     top: 38%;
     height: 350px;
   }
 
-  section.premium .banner li:nth-child(1),
-  section.premium .banner li:nth-child(2),
-  section.premium .banner li:nth-child(3) {
+  .premium__gallery-item:nth-child(1),
+  .premium__gallery-item:nth-child(2),
+  .premium__gallery-item:nth-child(3) {
     width: 28%;
   }
 
