@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 /* reset */
 * {
   margin: 0;
@@ -43,7 +42,7 @@ address, em, i {
   font-style: normal;
 }
 
-/* default */
+/* common */
 br.mo {
   display: none;
 }
@@ -52,6 +51,11 @@ br.mo {
   color: #39312b;
   font-weight: bold;
   letter-spacing: -6px;
+}
+
+.section-title {
+  font-size: 30px;
+  font-weight: normal;
 }
 
 /* layout */
@@ -324,11 +328,8 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/* ~~~~~~~~~~~~~ 공통 클래스로 빼기~~~~~~~ */
-.section-title {
+.about .section-title {
   color: #fff;
-  font-size: 30px;
-  font-weight: normal;
 }
 
 .about__inner.animate__motion .section-title {
@@ -468,9 +469,8 @@ body {
   top: 35%;
 }
 
-.section-title {
+.premium .section-title {
   margin-bottom: 20px;
-  font-size: 30px;
 }
 
 .premium__desc {
@@ -569,9 +569,8 @@ body {
   z-index: -1;
 }
 
-.section-title {
+.global .section-title {
   margin-bottom: 20px;
-  font-size: 30px;
 }
 
 .global__desc {
@@ -963,6 +962,11 @@ body {
 
 /* 태블릿 : 950px ~ 751px */
 @media screen and (max-width: 950px) {
+  /* common */
+  .section-title {
+    font-size: 23px;
+  }
+
   /* visual */
   .slide__photo {
     width: 92%;
@@ -1047,10 +1051,6 @@ body {
     height: 48%;
   }
 
-  .section-title {
-    font-size: 20px;
-  }
-
   .global__desc {
     font-size: 13px;
   }
@@ -1113,9 +1113,13 @@ body {
 
 /* 모바일 : 750px 이하 */
 @media screen and (max-width: 750px) {
-  /* default */
+  /* common */
   br.mo {
     display: block;
+  }
+
+  .section-title {
+    font-size: 21px;
   }
 
   /* visual */
@@ -1153,9 +1157,8 @@ body {
   }
 
   /* about */
-  .section-title {
+  .about .section-title {
     margin-bottom: 10px;
-    font-size: 20px;
   }
 
   .about__line-box {
@@ -1187,10 +1190,6 @@ body {
     left: 0;
     height: 32px;
     text-align: center;
-  }
-
-  .section-title {
-    font-size: 20px;
   }
 
   .premium__desc {
@@ -1233,6 +1232,11 @@ body {
 
 /* 모바일 : 320px ~ 280px 체크 */
 @media screen and (max-width: 320px) {
+  /* common */
+  .section-title {
+    font-size: 16px;
+  }
+
   /* visual */
   .slide__page img {
     width: 55%;
@@ -1259,10 +1263,6 @@ body {
     height: 480px;
   }
 
-  .section-title {
-    font-size: 16px;
-  }
-
   .about__text-item {
     font-size: 11px;
   }
@@ -1278,10 +1278,6 @@ body {
 
   .premium__text-img {
     top: 33%;
-  }
-
-  .section-title {
-    font-size: 16px;
   }
 
   .premium__desc {
@@ -1300,10 +1296,6 @@ body {
   }
 
   /* global */
-  .section-title {
-    font-size: 16px;
-  }
-
   .global__desc {
     font-size: 11px;
   }
