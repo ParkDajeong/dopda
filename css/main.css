@@ -60,12 +60,12 @@ body {
   font-family: 'NanumSquare', sans-serif !important;
   font-size: 14px;
   line-height: 1.4;
+  overflow-x: hidden;
 }
 
 .wrap {
   width: 100%;
   min-width: 1100px;
-  overflow-x: hidden;
 }
 
 /* header */
@@ -668,17 +668,17 @@ body {
 }
 
 /* footer */
-footer {
+.main-footer {
   padding: 80px 0 0;
   text-align: center;
 }
 
-footer .sns a {
+.sns__link {
   display: inline-block;
   margin-right: 30px;
 }
 
-footer .sns a:last-child {
+.sns__link:last-child {
   margin-right: 0;
 }
 
@@ -690,17 +690,17 @@ footer .sns a:last-child {
   letter-spacing: -6px;
 } */
 
-footer .logo {
+.main-footer .logo {
   margin: 40px 0;
   font-size: 40px;
 }
 
-footer .company-info {
+.main-footer__company-info {
   font-size: 17px;
   line-height: 1.4;
 }
 
-footer .company-info span {
+.main-footer__copyright {
   display: block;
   margin-top: 20px;
   color: #888;
@@ -708,19 +708,19 @@ footer .company-info span {
   font-weight: 100;
 }
 
-footer .box {
+.main-footer__bottom {
   background: url(../img/bottom_bg.jpg) no-repeat center/cover;
   padding: 150px 0;
   margin-top: 80px;
 }
 
-footer .box p {
+.main-footer__typo {
   color: #fff;
   font-size: 22px;
   font-weight: normal;
 }
 
-footer .box.animate__motion p {
+.main-footer__bottom.animate__motion .main-footer__typo {
   animation: slide-up 1s;
 }
 
@@ -1080,33 +1080,33 @@ footer .box.animate__motion p {
   }
 
   /* footer */
-  footer {
+  .main-footer {
     padding-top: 50px;
   }
 
-  footer .sns a img {
+  .sns__link img {
     width: 80%;
   }
 
-  footer .logo {
+  .main-footer .logo {
     font-size: 28px;
     letter-spacing: -4px;
   }
 
-  footer .company-info {
+  .main-footer__company-info {
     font-size: 13px;
   }
 
-  footer .company-info span {
+  .main-footer__copyright {
     margin-top: 10px;
   }
 
-  footer .box {
+  .main-footer__bottom {
     padding: 80px 0;
     margin-top: 50px;
   }
   
-  footer .box p {
+  .main-footer__typo {
     font-size: 17px;
   }
 }
@@ -1313,19 +1313,19 @@ footer .box.animate__motion p {
   }
 
   /* footer */
-  footer .logo {
+  .main-footer .logo {
     margin: 20px 0;
   }
 
-  footer .company-info {
+  .main-footer__company-info {
     font-size: 10px;
   }
 
-  footer .box {
+  .main-footer__bottom {
     padding: 50px 0;
   }
 
-  footer .box p {
+  .main-footer__typo {
     font-size: 14px;
   }
 }
