@@ -831,16 +831,16 @@ body {
     background-color: #fff;
     position: absolute;
     top: 0;
-    right: 0;
-    width: 0;
+    right: -500px;
     height: 100vh;
     z-index: 300;
     overflow: hidden;
-    transition: width 0.3s;
+    transition: 0.3s;
   }
 
   .gnb.on {
-    width: 50%;
+    right: 0;
+    width: 70%;
     max-width: 300px;
   }
 

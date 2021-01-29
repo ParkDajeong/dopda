@@ -1,6 +1,6 @@
 // Header Event
 function fixHeader(scroll) {
-  if(scroll > 200) {
+  if(scroll > 100) {
     $(".main-header").addClass("on");
   }else {
     $(".main-header").removeClass("on");
