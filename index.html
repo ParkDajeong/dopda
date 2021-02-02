@@ -12,23 +12,27 @@
   <link rel="stylesheet" href="./css/main.css">
   <!-- script -->
   <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <script src="./js/jquery.scrolla.min.js"></script>
-  <script src="./js/slick.min.js"></script>
-  <script src="./js/script.js"></script>
+  <script src="./js/jquery.scrolla.min.js" defer></script>
+  <script src="./js/slick.min.js" defer></script>
+  <script src="./js/script.js" defer></script>
 </head>
 <body>
   <div class="wrap">
     <!-- header -->
     <header class="main-header">
-      <a href="#" class="btn-menu--open">
+      <a href="#" class="btn-menu--open" title="메뉴 열기">
         <span class="lnr lnr-menu"></span>
+        <span class="blind">모바일 메뉴 열기</span>
       </a>
       <span class="main-header__mo-nav-bg"></span>
-      <h1 class="logo"><a href="#" class="logo__link">Concierge.</a></h1>
+      <h1 class="logo">
+        <a href="#" class="logo__link">Concierge.</a>
+      </h1>
       <!-- global nav -->
       <nav class="gnb">
-        <a href="#" class="btn-menu--close">
+        <a href="#" class="btn-menu--close" title="메뉴 닫기">
           <span class="lnr lnr-cross"></span>
+          <span class="blind">모바일 메뉴 닫기</span>
         </a>
         <ul class="gnb__list">
           <li class="gnb__item"><a href="#" class="gnb__link">about</a></li>
@@ -50,7 +54,7 @@
             <span class="mask b"></span>
             <span class="mask c"></span>
             <span class="mask d"></span>
-            <span class="slide__page"><img src="./img/1.png" alt="1"></span>
+            <span class="slide__page"><img src="./img/1.png" alt="슬라이드 1"></span>
           </div>
           <div class="slide__text">
             <h2 class="slide__title">For Your Business & <br class="mo">Life</h2>
@@ -67,7 +71,7 @@
             <span class="mask b"></span>
             <span class="mask c"></span>
             <span class="mask d"></span>
-            <span class="slide__page"><img src="./img/2.png" alt="2"></span>
+            <span class="slide__page"><img src="./img/2.png" alt="슬라이드 2"></span>
           </div>
           <div class="slide__text" style="color: #39312b">
             <h2 class="slide__title">For Your Business & <br class="mo">Life</h2>
@@ -79,7 +83,7 @@
         </li>
         <li class="slide__item">
           <div class="slide__photo">
-            <span class="slide__img-box"><img src="./img/main_visual3.png" alt="3"></span>
+            <span class="slide__img-box"><img src="./img/main_visual3.png" alt="슬라이드 3"></span>
             <span class="mask a"></span>
             <span class="mask b"></span>
             <span class="mask c"></span>
@@ -243,12 +247,26 @@
     <!-- footer -->
     <footer class="main-footer">
       <div class="sns">
-        <a href="#" class="sns__link"><img src="./img/instagram.png" alt=""></a>
-        <a href="#" class="sns__link"><img src="./img/facebook.png" alt=""></a>
-        <a href="#" class="sns__link"><img src="./img/youtube.png" alt=""></a>
-        <a href="#" class="sns__link"><img src="./img/blog.png" alt=""></a>
+        <a href="#" class="sns__link">
+          <img src="./img/instagram.png" alt="">
+          <span class="blind">돕다 인스타그램으로 이동</span>
+        </a>
+        <a href="#" class="sns__link">
+          <img src="./img/facebook.png" alt="">
+          <span class="blind">돕다 페이스북으로 이동</span>
+        </a>
+        <a href="#" class="sns__link">
+          <img src="./img/youtube.png" alt="">
+          <span class="blind">돕다 유튜브로 이동</span>
+        </a>
+        <a href="#" class="sns__link">
+          <img src="./img/blog.png" alt="">
+          <span class="blind">돕다 네이버 블로그로 이동</span>
+        </a>
       </div>
-      <h1 class="logo"><a href="#" class="logo__link">Concierge.</a></h1>
+      <h1 class="logo">
+        <a href="#" class="logo__link">Concierge.</a>
+      </h1>
       <p class="main-footer__company-info">
         대표자 홍길동 | 서울 중구 세종대로 110<br>
         사업자등록번호:123-12-12345 | 이메일:abc@naver.com<br>

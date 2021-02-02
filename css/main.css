@@ -43,6 +43,13 @@ address, em, i {
 }
 
 /* common */
+.blind {
+  display: block;
+  width: 1px;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
 br.mo {
   display: none;
 }
