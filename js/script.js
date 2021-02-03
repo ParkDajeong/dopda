@@ -14,13 +14,15 @@ $(window).on("scroll resize", function() {
 
 // mobile nav 
 $(function() {
-  $(".btn-menu--open").on("click", function() {
-    $("body").css({"overflow": "hidden"});
+  $(".btn-menu--open").on("click", function(e) {
+    e.preventDefault();
+    $("body").css({"overflow": "hidden", "touch-action": "none"});
     $(".main-header__mo-nav-bg").css({"display": "block"});
     $(".gnb").addClass("on");
   });
-  $(".btn-menu--close, .main-header__mo-nav-bg").on("click", function() {
-    $("body").css({"overflow": "auto"});
+  $(".btn-menu--close, .main-header__mo-nav-bg").on("click", function(e) {
+    e.preventDefault();
+    $("body").css({"overflow": "auto", "overflow-x": "hidden", "touch-action": "auto"});
     $(".main-header__mo-nav-bg").css({"display": "none"});
     $(".gnb").removeClass("on");
   });

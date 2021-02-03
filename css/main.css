@@ -84,10 +84,13 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 120px;
   padding: 0 60px;
-  line-height: 120px;
+  /* line-height: 120px; */
   z-index: 100;
   transition: 0.5s;
 }
@@ -101,13 +104,13 @@ body {
 }
 
 .main-header .logo {
-  float: left;
+  /* float: left; */
   font-size: 42px;
 }
 
 /* global nav */
 .gnb {
-  float: right;
+  /* float: right; */
 }
 
 .btn-menu--close {
@@ -802,11 +805,8 @@ body {
   
   /* header */
   .main-header {
-    display: flex;
-    justify-content: space-between;
     height: 60px;
     padding: 0 10px;
-    line-height: 60px;
   }
 
   .btn-menu--open {
@@ -815,6 +815,7 @@ body {
     height: 60px;
     padding-top: 5px;
     font-size: 32px;
+    line-height: 60px;
   }
 
   .main-header__mo-nav-bg {
@@ -825,7 +826,6 @@ body {
     display: none;
     width: 100%;
     height: 100%;
-    z-index: 200;
   }
 
   .main-header .logo {
